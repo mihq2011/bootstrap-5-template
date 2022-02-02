@@ -1,0 +1,237 @@
+:root {
+  --pink: #e91e63;
+  --light-text: #878787;
+  --dark-text: #222222;
+  --light-bg: #f6f6f8;
+  --primary-effect: #56cfe1;
+  --orange-highlight: #ffa800;
+}
+
+/* BOOTSTRAP OVERIDES */
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0 !important;
+}
+
+.modal-backdrop {
+  z-index: 1000 !important;
+}
+
+.btn-check:focus + .btn,
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0 !important;
+}
+
+.offcanvas {
+  transition: transform 0.3s ease-in-out !important;
+}
+
+
+.btn-close-light {
+  box-sizing: content-box;
+  width: 1.7em;
+  height: auto;
+  color: #fff;
+  background: #222;
+  border: 0;
+  border-radius: .25rem;
+  position: absolute;
+  right: -47px;
+  top: 0;
+  padding: 10px;
+  opacity: 0.9;
+}
+
+.btn-close-light i {
+  color: #fff;
+  font-size: 1.5rem;
+
+}
+
+/* CSS */
+
+.top-banner {
+  background-color: var(--pink);
+  color: white;
+}
+
+.top-banner .row {
+  cursor: pointer;
+}
+
+.top-banner .row .close-banner__btn {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.top-banner .row .close-banner__btn:first-of-type {
+  opacity: 0;
+}
+
+.top-banner .row .close-banner__btn:last-of-type:hover {
+  opacity: 0.6;
+}
+
+.top-banner .row .sale-details {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  padding: 5px 0px;
+}
+
+.top-banner .row .sale-details span {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.header-top .row.justify-content-between {
+  font-size: 14px;
+  padding: 10px 0px;
+  background-color: var(--light-bg);
+}
+
+.header-contact__info {
+  color: var(--light-text);
+}
+
+.header-contact__info span {
+  padding-right: 15px;
+}
+.header-top .current-discount {
+  color: var(--light-text);
+}
+
+.header-top .header-contact__info span,
+.header-top .current-discount a {
+  transition: color 0.2s ease-in-out;
+}
+
+.header-top .header-contact__info span:hover,
+.header-top .current-discount a:hover {
+  color: var(--primary-effect) !important;
+}
+
+.header-top .current-discount span {
+  color: var(--pink);
+}
+
+.header-top .currency-language {
+  color: var(--light-text);
+}
+
+.header-top .currency-language .location-content {
+  transition: color 0.2s ease-in-out;
+}
+
+.header-top .currency-language .location-content:hover {
+  color: var(--primary-effect);
+  cursor: pointer;
+}
+
+.header-top .currency-language span i {
+  padding-left: 2px;
+  font-size: 9px;
+}
+
+.navbar-brand span {
+  font-size: 2rem;
+}
+
+.navbar-nav .nav-item {
+  color: var(--dark-text);
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  padding: 0px 10px;
+  position: relative;
+}
+
+.navbar-nav .nav-item .header-notification-bubble {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background-color: var(--primary-effect);
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px 2px;
+  font-size: 10px;
+}
+
+.navbar-nav .nav-item:nth-of-type(4) .header-notification-bubble {
+  background-color: var(--orange-highlight);
+}
+
+.user-icons a {
+  position: relative;
+  margin-left: 10px;
+}
+
+.user-icons a i {
+  font-size: 20px;
+}
+
+.user-icons a .liked-count {
+  position: absolute;
+  background-color: var(--dark-text);
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  top: -10px;
+  right: -9px;
+}
+
+#intro {
+  background-image: url("/assets/mainpagetopbg.jpeg");
+  min-height: 100%;
+  height: 700px;
+  width: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+#intro .container-lg .row {
+  height: 700px;
+  width: 100%;
+}
+
+#intro .container-lg .row .display-5 {
+  font-weight: 600;
+}
+
+.card-body {
+  padding: 1rem 0rem !important;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 600px) {
+
+  .offcanvas-start {
+    width: 85% !important;
+  }
+
+  #intro{
+    height: 250px !important;
+  }
+
+  #intro .container-lg .row {
+    height: 200px;
+    width: 100%;
+  }
+
+  .top-banner-info {
+    position: absolute;
+    left: 35%;
+    top: 30%;
+  }
+
+  
+
+}
+
