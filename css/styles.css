@@ -26,6 +26,10 @@
   transition: transform 0.3s ease-in-out !important;
 }
 
+.offcanvas-body {
+  padding: 0rem 1rem 1rem 1rem !important;
+}
+
 
 .btn-close-light {
   box-sizing: content-box;
@@ -45,8 +49,19 @@
 .btn-close-light i {
   color: #fff;
   font-size: 1.5rem;
-
 }
+
+.offcanvas-header {
+  padding: 0 !important;
+}
+
+/* CUSTOMED CLASSES */
+.d-center {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
 
 /* CSS */
 
@@ -82,9 +97,9 @@
   font-size: 14px;
 }
 
+/* HEADER */
 .header-top .row.justify-content-between {
   font-size: 14px;
-  padding: 10px 0px;
   background-color: var(--light-bg);
 }
 
@@ -184,6 +199,43 @@
   right: -9px;
 }
 
+/* MOBILE NAV */
+.mb-nav-title {
+  height: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, .04);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.mb-nav-title.active {
+  background-color: rgba(0, 0, 0, .09);
+  border-bottom: 2px solid var(--primary-effect);
+}
+
+.mb-nav-item {
+  position: relative;
+}
+
+.mb-nav-item a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 45px;
+  border-bottom: 1px solid rgba(129,129,129,.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 #intro {
   background-image: url("/assets/mainpagetopbg.jpeg");
   min-height: 100%;
@@ -213,7 +265,7 @@
 @media only screen and (max-width: 600px) {
 
   .offcanvas-start {
-    width: 85% !important;
+    width: 70% !important;
   }
 
   #intro{
